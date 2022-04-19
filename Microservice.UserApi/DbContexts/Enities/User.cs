@@ -10,11 +10,9 @@ namespace Microservice.UserApi.DbContexts.Enities
         [Key]
         public Guid Id { get; set; }
         [Required]
-        [MaxLength(50)]
         public string Username { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        [Required]
         public int RoleId { get; set; }
     }
 }
