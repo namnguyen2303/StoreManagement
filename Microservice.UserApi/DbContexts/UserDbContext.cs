@@ -16,25 +16,6 @@ namespace Microservice.UserApi.DbContexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<User>().HasData(new User
-            {
-                Id = Guid.NewGuid(),
-                Username = "namnv",
-                FirstName = "Nam",
-                LastName = "Nguyen",
-                RoleId = 1,
-            });
-
-            modelBuilder.Entity<User>().HasData(new User
-            {
-                Id = Guid.NewGuid(),
-                Username = "phunh",
-                FirstName = "Phu",
-                LastName = "Nguyen",
-                RoleId = 1,
-            });
-
         }
     }
 }
